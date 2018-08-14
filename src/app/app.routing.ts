@@ -1,0 +1,40 @@
+import { Routes } from '@angular/router';
+import { PageGlobalPipeComponent } from './global-pipe';
+import { PageDiffFormCtrlsComponent } from './diff-form-ctrls';
+import { PageTemplateDrivenFrmComponent } from './template-driven-frm';
+import { PageModelDrivenFrmComponent } from './model-driven-frm';
+import { PageNestedModelDrivenFrmComponent } from './nested-model-driven-frm';
+import { PageConditionalValModelDrivenFrmComponent } from './conditional-val-model-driven-frm';
+import { PageHammerjsComponent } from './hammerjs';
+import { PageCustomValidatorComponent } from './custom-validator';
+import { PageSimpleLanguageTranslationPart1Component }   from './simple-language-translation-part-1';
+import { PageSimpleLanguageTranslationPart2Component }   from './simple-language-translation-part-2';
+import { PageTransclusionComponent } from './transclusion';
+import { PageComponentInheritanceComponent } from './component-inheritance';
+import { PageHomeComponent } from './home';
+import { PageDepInjectComponent } from './dep-inject';
+import { PageFormArrayDynValComponent } from './form-array-dyn-val';
+import { PageSameHeightComponent } from './same-height';
+import { PageThreeWaysComponent } from './three-ways';
+import { PageFileUploadComponent } from './file-upload';
+
+export const appRoutes: Routes = [
+  { path: 'global-pipe', component: PageGlobalPipeComponent },
+  { path: 'diff-form-ctrls', component: PageDiffFormCtrlsComponent },
+  { path: 'template-driven-frm', component: PageTemplateDrivenFrmComponent },
+  { path: 'model-driven-frm', component: PageModelDrivenFrmComponent },
+  { path: 'nested-model-driven-frm', component: PageNestedModelDrivenFrmComponent },
+  { path: 'conditional-val-model-driven-frm', component: PageConditionalValModelDrivenFrmComponent },
+  { path: 'hammerjs', component: PageHammerjsComponent },
+  { path: 'custom-validator', component: PageCustomValidatorComponent },
+  { path: 'simple-language-translation-part-1', component: PageSimpleLanguageTranslationPart1Component },
+  { path: 'simple-language-translation-part-2', component: PageSimpleLanguageTranslationPart2Component },
+  { path: 'transclusion', component: PageTransclusionComponent },
+  { path: 'component-inheritance', component: PageComponentInheritanceComponent },
+  { path: 'dependency-injection', component: PageDepInjectComponent },
+  { path: 'dynamic-form-array-val', component: PageFormArrayDynValComponent },
+  { path: 'same-height', component: PageSameHeightComponent },
+  { path: 'three-ways', component: PageThreeWaysComponent },
+  { path: 'file-upload', component: PageFileUploadComponent },
+  { path: '', component: PageHomeComponent },
+];
